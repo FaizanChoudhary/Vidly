@@ -12,6 +12,7 @@ html {
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-heading: #1b0760;
+  --color-hover: #dee2e6;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
@@ -63,10 +64,10 @@ p {
 transition: all 0.3s;
 }
 .nav-link:hover,.list-group-item:hover{
-background-color: #dee2e6;
+background-color: var(--color-hover);
 }
 .nav-item.nav-link.active{
-background-color: #eceff2ab;
+background-color: var(--color-hover);
 }
 .list-group-item.active:hover{
 background-color: #007bff;
@@ -203,6 +204,22 @@ a {
 /* Buttons */
 .btn{
   font-size: 1.2rem;
+  font-weight: 600 ;
+  outline: none ;
+}
+.btn-register,.btn-register.active{
+  background: #e011eb !important;
+  border-color: #CB46D3 !important;
+  border-radius: 20px;
+  margin: 3px 0;
+  font-size: 14px;
+  transition: all 0.3s;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-register:hover{
+  background: #CB46D3 !important;
+  border-color: #CB46D3 !important;
 }
 
 .block-plans .btn {

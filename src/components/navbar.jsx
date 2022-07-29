@@ -32,11 +32,11 @@ const NavBar = ({ user }) => {
             Log in
           </NavLink>
           <NavLink
-            className="nav-item nav-link"
+            className="btn btn-primary btn-register"
             aria-current="page"
             to="/registration"
           >
-            Registration
+            Sign Up
           </NavLink>
         </React.Fragment>
       )}
