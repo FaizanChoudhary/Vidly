@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+
 const NavBar = ({ user }) => {
   return (
     <ul className="nav nav-tabs">
@@ -17,8 +18,8 @@ const NavBar = ({ user }) => {
         Customers
       </NavLink>
 
-      <NavLink className="nav-item nav-link" aria-current="page" to="/rentals">
-        Rentals
+      <NavLink className="nav-item nav-link" aria-current="page" to="/services">
+        Services
       </NavLink>
 
       {!user && (

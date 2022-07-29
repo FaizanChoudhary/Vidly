@@ -8,7 +8,7 @@ const Pagination = (props) => {
   ////////////////////////////////////////
   return (
     <nav aria-label="Page navigation example">
-      <ul className="pagination">
+      <ul className="pagination clickable">
         {pages.map((page) => (
           <li
             key={page}

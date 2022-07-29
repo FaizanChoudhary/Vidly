@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Movies from "./components/movies";
 import MovieForm from "./components/movieForm";
-import Rentals from "./components/rentals";
+import Services from "./components/services";
 import Customers from "./components/customers";
 import NotFound from "./components/not-found";
 import LoginForm from "./components/loginForm";
@@ -13,7 +13,7 @@ import Logout from "./components/logout";
 import ProtectedRoute from "./common/protectedRoute";
 import auth from "./services/authService";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
+import "./css/App.css";
 
 class App extends Component {
   state = { user: "" };
@@ -27,8 +27,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <ToastContainer />
-        <NavBar user={user} />
         <main className="container">
+          <NavBar user={user} />
           <Switch>
             <ProtectedRoute path="/movies/:id" component={MovieForm} />
             <Route path="/login" component={LoginForm} />
@@ -39,7 +39,7 @@ class App extends Component {
             />
             <Route path="/customers" component={Customers} />
             <Route path="/not-found" component={NotFound} />
-            <Route path="/rentals" component={Rentals} />
+            <Route path="/services" component={Services} />
             <Route path="/registration" component={Registration} />
             <Redirect exact from="/" to="/movies" />
             <Redirect to="/not-found" />
