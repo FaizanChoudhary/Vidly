@@ -55,9 +55,14 @@ p {
   justify-content: space-evenly;
 }
 .navbar-brand{
+  color: #e011eb;
   font-weight: bold;
   font-size: 1.5rem;
   font-family: cursive;
+  transition: all 0.3s;
+}
+.navbar-brand:hover{
+  color: #CB46D3;
 }
 
 .nav-link,.list-group-item{

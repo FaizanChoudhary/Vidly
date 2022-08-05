@@ -58,6 +58,11 @@ const NavBar = ({ user }) => {
           </NavLink>
         </React.Fragment>
       )}
+      {user && (
+        <NavLink className="nav-item nav-link" aria-current="page" to="/cart">
+          Cart
+        </NavLink>
+      )}
     </ul>
   );
 };

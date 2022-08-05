@@ -10,6 +10,7 @@ import NotFound from "./components/not-found";
 import LoginForm from "./components/loginForm";
 import Registration from "./components/registerForm";
 import Logout from "./components/logout";
+import Cart from "./components/cart";
 import ProtectedRoute from "./common/protectedRoute";
 import auth from "./services/authService";
 import "react-toastify/dist/ReactToastify.css";
@@ -33,6 +34,7 @@ class App extends Component {
             <ProtectedRoute path="/movies/:id" component={MovieForm} />
             <Route path="/login" component={LoginForm} />
             <Route path="/logout" component={Logout} />
+            <ProtectedRoute path="/cart" component={Cart} />
             <Route
               path="/movies"
               render={(props) => <Movies {...props} user={user} />}

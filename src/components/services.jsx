@@ -30,6 +30,7 @@ class Services extends React.Component {
       </ul>
     );
   };
+
   selectCard = (badge) => {
     return (
       <header class="card__header">
